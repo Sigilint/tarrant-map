@@ -33,3 +33,7 @@ python3 -c 'import sqlite3,json; c=sqlite3.connect("../datasets/tarrant/tarrant_
 ```
 
 The included snapshot was fetched on 2026-10-21; see `datasets/tarrant/README.md` in `texas-well-platform` for sources, identity heuristics and limitations. A production service for ongoing refreshes, access-controlled observations, a contractual geocoder/tile provider, and sensor ingestion are future work.
+
+## Deployment
+
+Live at **https://wells.sigilint.com**, also served at `https://sigilint-tarrant-map.netlify.app`. It is the Netlify site `sigilint-tarrant-map`, which deploys automatically on every push to `main` of `Sigilint/tarrant-map`. Build settings are in `netlify.toml`: no build step, and `dist/` is published. See `DEPLOYMENT.md` in `Sigilint/sigilint-web` for how all the Sigilint sites are hosted.
